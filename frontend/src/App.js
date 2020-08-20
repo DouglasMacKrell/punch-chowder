@@ -5,10 +5,9 @@ import ToolBar from "./Components/ToolBar/ToolBar";
 import SideDrawer from "./Components/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
 import Home from './Components/Home/Home'
-
-
 import './App.css';
 import SeasonSelect from './Components/SeasonSelect/SeasonSelect';
+import Watch from './Components/Watch/Watch';
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -36,6 +35,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/unleashtheflavor" component={SeasonSelect} />
+          <Route path="/watch" component={Watch} />
         </Switch>
       </Router>
     </div>

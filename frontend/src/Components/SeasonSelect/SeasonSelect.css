@@ -1,11 +1,32 @@
 .season-select {
-      min-height: 100vh;
+  min-height: 100vh;
   background-image: url(./unleash-the-flavor.png);
-    background-position: center;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.season-select__main-container {
+  grid-column: 3;
+  align-self: center;
+}
+
+.season-select__sub-container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.season-select__sub-container button {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: gold;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  margin-right: 25px;
 }

@@ -14,23 +14,17 @@ const ToolBar = (props) => {
         </div>
         <div className="toolbar__logo">
           <a href="/">
-            TEXT LOGO
+            PUNCH CHOWDER
           </a>
         </div>
         <div className="spacer" />
         <div className="toolbar_nav-items">
           <ul>
-            <li>
+            {/* <li>
               <NavLink to="/">Home</NavLink>
-            </li>
+            </li> */}
             <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/skills">Skills</NavLink>
+              <NavLink to="/unleashtheflavor">UNLEASH THE FLAVOR</NavLink>
             </li>
           </ul>
         </div>
