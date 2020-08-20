@@ -6,12 +6,12 @@ CREATE TABLE episodes (
     id SERIAL PRIMARY KEY,
     title VARCHAR,
     episodeUrl VARCHAR,
-    season INT
+    season_id INT
 );
 
 -- Seed data
 
-INSERT INTO episodes (title, episodeUrl, season)
+INSERT INTO episodes (title, episodeUrl, season_id)
     VALUES('1: Mystic Mayhem', 'https://drive.google.com/file/d/1u874EX3ffJVmjGtKLdELAIsA8n03ze8G/preview', 1),
     ('2A: Origami Tsunami', 'https://drive.google.com/file/d/1aUKuhGJ99MR9uKwTMHKih_PP7z_cEBbs/preview', 1),
     ('2B: Donnie''s Gifts', 'https://drive.google.com/file/d/1xPaosvhGRk6fzSAYejQVBdFrU0jRexSd/preview', 1),
