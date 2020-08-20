@@ -14,7 +14,7 @@ const ToolBar = (props) => {
         </div>
         <div className="toolbar__logo">
           <a href="/">
-            <img src={Logo} alt="Douglas MacKrell Logo" />
+            TEXT LOGO
           </a>
         </div>
         <div className="spacer" />
