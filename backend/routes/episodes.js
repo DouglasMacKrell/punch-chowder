@@ -4,8 +4,8 @@ var episodesQueries = require("../queries/episodes");
 
 router.get("/:episode_id", async (req, res, next) => {
   try {
-    const episodeId = req.params.episode_id;
-    const episode = await episodesQueries.getEpisodeById(episodeId);
+    var episodeId = req.params.episode_id;
+    var episode = await episodesQueries.getEpisodeById(episodeId);
     res.json({
       status: "success",
       message: `Episode ${episodeId} retrieved!`,
@@ -17,14 +17,16 @@ router.get("/:episode_id", async (req, res, next) => {
       message: "Oops! All Errors!!",
       payload: null,
     });
-    throw err;
+    throw error;
   }
 });
 
 router.get("/season/:season_id", async (req, res, next) => {
   try {
     const seasonId = req.params.season_id;
-    const allEpisodesBySeason = await episodesQueries.getAllEpisodesBySeasonId(seasonId);
+    const allEpisodesBySeason = await episodesQueries.getAllEpisodesBySeasonId(
+      seasonId
+    );
     res.json({
       status: "success",
       message: `All episodes of season ${seasonId} retrieved!`,
@@ -36,6 +38,8 @@ router.get("/season/:season_id", async (req, res, next) => {
       message: "Oops! All Errors!",
       payload: null,
     });
-    throw err;
+    throw error;
   }
 });
+
+module.exports = router;
