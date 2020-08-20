@@ -1,0 +1,20 @@
+.home {
+  min-height: 100vh;
+  background-image: url(./punch-chowder-plainBG1.png);
+    background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home__sub-container {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 5% 5%;
+  background: royalblue;
+  border: 5px skyblue solid;
+  border-radius: 20px;
+}
