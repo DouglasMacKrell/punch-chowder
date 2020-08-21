@@ -11,7 +11,7 @@ const SeasonOne = () => {
     const getSeasonOne = async () => {
       try {
         let { data } = await axios.get(
-          `http://localhost:3001/api/episodes/season/1`
+          `https://calm-waters-58474.herokuapp.com/api/episodes/season/1`
         );
         let fullSeasonOne = data.payload;
         setSOne(fullSeasonOne);

@@ -15,7 +15,7 @@ const Watch = () => {
     const getEpisode = async () => {
       try {
         let { data } = await axios.get(
-          `http://localhost:3001/api/episodes/${episode_id}`
+          `https://calm-waters-58474.herokuapp.com/api/episodes/${episode_id}`
         );
         let selectedEpisode = data.payload;
         setTitle(selectedEpisode.title);
