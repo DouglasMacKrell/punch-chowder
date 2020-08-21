@@ -21,11 +21,11 @@ const ToolBar = (props) => {
         <div className="spacer" />
         <div className="toolbar_nav-items">
           <ul>
-            {/* <li>
-              <NavLink to="/">Home</NavLink>
-            </li> */}
             <li>
               <NavLink to="/unleashtheflavor">UNLEASH THE FLAVOR</NavLink>
+            </li>
+            <li>
+              <NavLink to="/secretlogin">SECRETS</NavLink>
             </li>
           </ul>
         </div>
