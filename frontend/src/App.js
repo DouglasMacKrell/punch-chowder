@@ -8,6 +8,8 @@ import Home from './Components/Home/Home'
 import './App.css';
 import SeasonSelect from './Components/SeasonSelect/SeasonSelect';
 import Watch from './Components/Watch/Watch';
+import SeasonOne from './Components/SeasonOne/SeasonOne';
+import SeasonTwo from './Components/SeasonTwo/SeasonTwo';
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -35,6 +37,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/unleashtheflavor" component={SeasonSelect} />
+          <Route path="/seasonone" component={SeasonOne} />
+          <Route path="/seasontwo" component={SeasonTwo} />
           <Route path="/watch/:episode_id" component={Watch} />
         </Switch>
       </Router>

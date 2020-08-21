@@ -1,6 +1,6 @@
 .home {
   min-height: 100vh;
-  background-image: url(./punch-chowder-plainBG1.png);
+  background-image: url(./punch-chowder-masterBG-sm.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -11,21 +11,45 @@
 }
 
 .home__main-container {
-  width: 50%;
+  width: 100%;
 }
 
 .home__sub-container {
   padding: 5% 5%;
   border-radius: 20px;
-  margin-top: 30%;
 }
 
 .home__sub-container button {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  background-color: gold;
-  color: black;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Impact;
+	font-size:28px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+.home__sub-container button:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+
+.home__sub-container button:active {
+	position:relative;
+	top:1px;
+}
+
+.home__sub-container button:focus {
+  outline: none;
+}
+
+.home__logo {
+  width: 85vw;
 }

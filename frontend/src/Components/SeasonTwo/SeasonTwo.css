@@ -1,6 +1,6 @@
-.season-one {
+.season-two {
   min-height: 100vh;
-  background-image: url(./RotTMNT\ BG1.jpg);
+  background-image: url(./RotTMNT\ BG2.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -10,8 +10,6 @@
   justify-content: space-around;
 }
 
-.season-one__sub-container {
-        margin-top: 90px;
-
+.season-two__sub-container {
+    margin-top: 90px;
 }
-

@@ -1,15 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-import './SeasonOne.css'
+import LinksContainer from "../LinksContainer/LinksContainer";
+import "./SeasonOne.css";
 
 const SeasonOne = () => {
-    return (
-        <div className="season-one">
-            <div className="season-one__main-container">
-                
-            </div>
-        </div>
-    )
-}
+  const [sOne, setSOne] = useState({});
 
-export default SeasonOne
+  useEffect(() => {
+    const getSeasonOne = async () => {
+      try {
+        let { data } = await axios.get(
+          `http://localhost:3001/api/episodes/season/1`
+        );
+        let fullSeasonOne = data.payload;
+        setSOne(fullSeasonOne);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    getSeasonOne();
+  }, []);
+
+  return (
+    <div className="season-one">
+      <div className="season-one__main-container">
+        <div className="season-one__sub-container">
+          <LinksContainer episodes={sOne} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SeasonOne;

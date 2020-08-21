@@ -2,6 +2,7 @@ import React from "react";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { NavLink } from "react-router-dom";
 import "./ToolBar.css";
+import Logo from './punch-chowder-logo.svg'
 
 // import Logo from "./Doug-Logo-Red.svg";
 
@@ -14,7 +15,7 @@ const ToolBar = (props) => {
         </div>
         <div className="toolbar__logo">
           <a href="/">
-            PUNCH CHOWDER
+            <img src={Logo} alt="Punch Chowder" className="toolbar__logo-img" />
           </a>
         </div>
         <div className="spacer" />

@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: purple;
+    background: skyblue;
     height: 56px;
     z-index: 50;
 }
@@ -20,13 +20,13 @@
 }
 
 .toolbar__logo img {
-    width: 45px;
+    width: 200px;
     height: auto;
     padding-top: 5px;
 }
 
 .toolbar__logo a {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 
@@ -46,13 +46,14 @@
 }
 
 .toolbar_nav-items a {
-    color: white;
+    color: red;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .toolbar_nav-items a:hover,
 .toolbar_nav-items a:active {
-    color: orange;
+    color: white;
 }
 
 @media (max-width: 768px) {
