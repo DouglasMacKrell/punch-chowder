@@ -35,7 +35,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/unleashtheflavor" component={SeasonSelect} />
-          <Route path="/watch" component={Watch} />
+          <Route path="/watch/:episode_id" component={Watch} />
         </Switch>
       </Router>
     </div>

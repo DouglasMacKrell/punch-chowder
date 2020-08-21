@@ -1,0 +1,33 @@
+.watch {
+  min-height: 100vh;
+  background-image: url(./RotTMNT\ nBG1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.watch__main-container {
+    color: white;
+    width: 75%;
+}
+
+.frame-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+#ifrm {
+      position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
