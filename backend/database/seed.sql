@@ -1,7 +1,8 @@
-DROP DATABASE IF EXISTS punchchowder;  
-CREATE DATABASE punchchowder;  
-\c punchchowder;
+-- DROP DATABASE IF EXISTS punchchowder;  
+-- CREATE DATABASE punchchowder;  
+-- \c punchchowder;
 
+DROP TABLE IF EXISTS episodes;
 CREATE TABLE episodes (
     id SERIAL PRIMARY KEY,
     title VARCHAR,
