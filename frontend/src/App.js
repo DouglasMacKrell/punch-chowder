@@ -10,6 +10,7 @@ import SeasonSelect from './Components/SeasonSelect/SeasonSelect';
 import Watch from './Components/Watch/Watch';
 import SeasonOne from './Components/SeasonOne/SeasonOne';
 import SeasonTwo from './Components/SeasonTwo/SeasonTwo';
+import FourZeroFour from './Components/FourZeroFour/FourZeroFour';
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/seasonone" component={SeasonOne} />
           <Route path="/seasontwo" component={SeasonTwo} />
           <Route path="/watch/:episode_id" component={Watch} />
+          <Route component={FourZeroFour} />
         </Switch>
       </Router>
     </div>

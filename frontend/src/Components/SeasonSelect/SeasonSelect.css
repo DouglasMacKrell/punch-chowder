@@ -17,6 +17,12 @@
 .season-select__sub-container {
   display: flex;
   flex-direction: column;
+  color: lightgoldenrodyellow;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.season-select__sub-container h1 {
+  font-size: 2rem;
 }
 
 .season-select__sub-container button {

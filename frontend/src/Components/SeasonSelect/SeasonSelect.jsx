@@ -9,7 +9,7 @@ const SeasonSelect = () => {
       <div className="season-select__main-container">
         <div className="season-spacer" />
         <div className="season-select__sub-container">
-          <h2>UNLEASH THE FLAVOR</h2>
+          <h1>UNLEASH THE FLAVOR!</h1>
           <Link to="/seasonone">
             <button>SEASON 1</button>
           </Link>
