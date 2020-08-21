@@ -11,7 +11,7 @@ const SecretsLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (input === "Bootyyyshaker9000") {
-            window.location.href = "/update-this"
+            window.location.href = "/mad/dogs/ahoy"
         } else {
             window.location.href = "/accessdenied"
         }

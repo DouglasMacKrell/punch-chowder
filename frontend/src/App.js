@@ -13,6 +13,7 @@ import SeasonTwo from './Components/SeasonTwo/SeasonTwo';
 import FourZeroFour from './Components/FourZeroFour/FourZeroFour';
 import SecretsLogin from './Components/SecretsLogin/SecretsLogin';
 import AccessDenied from './Components/AccessDenied/AccessDenied';
+import TopSecret from './Components/TopSecret/TopSecret';
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/watch/:episode_id" component={Watch} />
           <Route path="/secretlogin" component={SecretsLogin} />
           <Route path="/accessdenied" component={AccessDenied} />
+          <Route path="/mad/dogs/ahoy" component={TopSecret} />
           <Route component={FourZeroFour} />
         </Switch>
       </Router>
