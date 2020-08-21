@@ -26,6 +26,8 @@
 
 .side-drawer li {
     margin: 1.5rem 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
 }
 
 .side-drawer a {

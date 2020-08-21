@@ -27,7 +27,7 @@ const Watch = () => {
     };
 
     getEpisode();
-  }, [hasParamsChanged]);
+  }, [hasParamsChanged, episode_id]);
 
   const updatePage = () => {
       setHasParamsChanged(true)
@@ -36,19 +36,19 @@ const Watch = () => {
   return (
     <div className="watch">
       <div className="watch__main-container">
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <div className="frame-container">
-          <iframe id="ifrm" src={`${epUrl}`} width="640" height="480"></iframe>
+          <iframe id="ifrm" src={`${epUrl}`} title={`${title}`} width="640" height="480"></iframe>
         </div>
         <div className="watch__controls">
-          {title != "1: Mystic Mayhem" ? (
+          {title !== "1: Mystic Mayhem" ? (
             <Link to={`/watch/${parseInt(episode_id) - 1}`} onClick={updatePage}>
               <button>PREVIOUS</button>
             </Link>
           ) : (
             <div className="spacer" />
           )}
-          {title != "13B: Rise" ? (
+          {title !== "13B: Rise" ? (
             <Link to={`/watch/${parseInt(episode_id) + 1}`} onClick={updatePage}>
               <button>NEXT</button>
             </Link>

@@ -42,7 +42,9 @@
 }
 
 .toolbar_nav-items li {
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .toolbar_nav-items a {
