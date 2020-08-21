@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import ToolBar from "./components/ToolBar/ToolBar_2";
+import ToolBar from "./components/ToolBar/ToolBar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Home from './components/Home/Home'

@@ -1,0 +1,37 @@
+.four-zero-four {
+  min-height: 100vh;
+  background-image: url(./Green_GrungeBG.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.four-zero-four__sub-container img {
+    width: 75%;
+}
+
+@media screen and (min-width: 1025px) {
+    .four-zero-four {
+  min-height: 100vh;
+  background-image: url(./foot-recruit-404.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.four-zero-four__main-container {
+    align-self: center;
+}
+
+.four-zero-four__sub-container img {
+    width: 75%;
+    margin-bottom: 200px;
+}
+}

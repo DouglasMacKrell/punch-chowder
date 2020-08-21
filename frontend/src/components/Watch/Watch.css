@@ -1,0 +1,74 @@
+.watch {
+  min-height: 100vh;
+  background-image: url(./RotTMNT-nBG1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.watch__main-container {
+  margin-top: 60px;
+  color: white;
+  width: 75%;
+}
+
+.watch__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.watch__controls button {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Impact;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.watch__controls button:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab23;
+}
+
+.watch__controls button:active {
+  position: relative;
+  top: 1px;
+}
+
+.watch__controls button:focus {
+  outline: none;
+}
+
+.frame-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+#ifrm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
