@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import ToolBar from "./Components/ToolBar/ToolBar";
-import SideDrawer from "./Components/SideDrawer/SideDrawer";
-import Backdrop from "./Components/Backdrop/Backdrop";
-import Home from './Components/Home/Home'
+import ToolBar from "./components/ToolBar/ToolBar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
+import Home from './components/Home/Home'
 import './App.css';
-import SeasonSelect from './Components/SeasonSelect/SeasonSelect';
-import Watch from './Components/Watch/Watch';
-import SeasonOne from './Components/SeasonOne/SeasonOne';
-import SeasonTwo from './Components/SeasonTwo/SeasonTwo';
-import FourZeroFour from './Components/FourZeroFour/FourZeroFour';
-import SecretsLogin from './Components/SecretsLogin/SecretsLogin';
-import AccessDenied from './Components/AccessDenied/AccessDenied';
-import TopSecret from './Components/TopSecret/TopSecret';
+import SeasonSelect from './components/SeasonSelect/SeasonSelect';
+import Watch from './components/Watch/Watch';
+import SeasonOne from './components/SeasonOne/SeasonOne';
+import SeasonTwo from './components/SeasonTwo/SeasonTwo';
+import FourZeroFour from './components/FourZeroFour/FourZeroFour';
+import SecretsLogin from './components/SecretsLogin/SecretsLogin';
+import AccessDenied from './components/AccessDenied/AccessDenied';
+import TopSecret from './components/TopSecret/TopSecret';
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
