@@ -12,10 +12,10 @@ The site is 100% ad free, and designed for ease of use, so users of all ages can
 
 ## Videos
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=fTE690MjbcA" target="_blank"><img src="http://img.youtube.com/vi/fTE690MjbcA/0.jpg" 
-alt="Video Walkthrough Of DougTV" width="240" height="180" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=DzURPJnaEjs" target="_blank"><img src="http://img.youtube.com/vi/DzURPJnaEjs/0.jpg" 
+alt="Rise of the Teenage Mutant Ninja Turtles Fan Site - Punch Chowder" width="240" height="180" border="10" /></a>
 
-* [Edge Case Fix For DougTV](https://youtu.be/fTE690MjbcA)
+* [Rise of the Teenage Mutant Ninja Turtles Fan Site - Punch Chowder](https://youtu.be/DzURPJnaEjs)
 
 ## Features
 
