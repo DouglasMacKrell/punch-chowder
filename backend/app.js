@@ -7,11 +7,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var episodesRouter = require('./routes/episodes');
 
-import sslRedirect from "heroku-ssl-redirect";
+const sslRedirect = require("heroku-ssl-redirect");
 
 var app = express();
 
-// app.use(sslRedirect());
+app.use(sslRedirect());
 
 var cors = require("cors");
 app.use(cors());
