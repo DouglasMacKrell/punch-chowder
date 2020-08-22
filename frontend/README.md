@@ -2,7 +2,7 @@
 
 ## Live @ [punchchowder.com](https://punchchowder.com/)
 
-[![Heroku](https://heroku-badge.herokuapp.com/?app=dougtv)](https://dougtv.herokuapp.com/)
+![Heroku](https://pyheroku-badge.herokuapp.com/?app=<punch-chowder>&style=<flat>)
 
 **Punch Chowder** is a Full Stack Web App created to serve all 70 HD episodes of Rise Of The Teenage Mutant Ninja Turtles, and help the purposefully-neglected critically-acclaimed show reach a new audience.
 
