@@ -1,4 +1,4 @@
-const sslRedirect = require("heroku-ssl-redirect");
+// const sslRedirect = require("heroku-ssl-redirect");
 var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
@@ -10,7 +10,7 @@ var episodesRouter = require("./routes/episodes");
 
 var app = express();
 
-app.use(sslRedirect());
+// app.use(sslRedirect());
 
 var cors = require("cors");
 app.use(cors());
