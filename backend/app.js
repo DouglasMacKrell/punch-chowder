@@ -11,7 +11,7 @@ import sslRedirect from "heroku-ssl-redirect";
 
 var app = express();
 
-app.use(sslRedirect());
+// app.use(sslRedirect());
 
 var cors = require("cors");
 app.use(cors());
