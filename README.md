@@ -8,7 +8,7 @@
 
 The site is 100% ad free, and designed for ease of use, so users of all ages can quickly access the episodes!
 
-![Punch Chowder Site Walkthrough](https://punchchowder.com/punch-chowder-siteS.gif)
+[![Punch Chowder Site Walkthrough](https://punchchowder.com/punch-chowder-siteS.gif)](https://punchchowder.com/)
 
 ## Videos
 
