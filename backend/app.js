@@ -1,3 +1,4 @@
+var sslRedirect = require('heroku-ssl-redirect');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -7,11 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var episodesRouter = require('./routes/episodes');
 
-const sslRedirect = require("heroku-ssl-redirect");
 
 var app = express();
-
-app.use(sslRedirect());
 
 var cors = require("cors");
 app.use(cors());
@@ -22,6 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 // app.use(express.static(path.join(__dirname, "/public")));
+
+app.use(sslRedirect());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
