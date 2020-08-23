@@ -62,88 +62,88 @@ You must install [Node.js](https://nodejs.org) as well as [PostgreSQL](https://w
 You can check for these dependencies with `node -v` and `psql -v`. If your shell/terminal doesn't complain and you see version numbers you are good to go.
 
 1. Clone this repo into a folder of your choice:
-```
-       git clone https://github.com/DouglasMacKrell/punch-chowder.git
-```
+    ```
+    git clone https://github.com/DouglasMacKrell/punch-chowder.git
+    ```
 
 2. Install dependencies for the Node/Express Server:
-```
-       cd backend && npm install
-```
+    ```
+    cd backend && npm install
+    ```
 
 3. Install dependencies for the React App (`client` folder):
-```
-       cd ../frontend && npm install
-```
+    ```
+    cd ../frontend && npm install
+    ```
 
 4. Create database and seed sample data. While inside the root directory, open the `seed.sql` file and:
 
     - Change  
-    ```
-         DROP TABLE IF exists episodes;
-    ```
+        ```
+        DROP TABLE IF exists episodes;
+        ```
 
     - to 
-    ``` 
-         DROP DATABASE IF EXISTS punchchowder;  
-         CREATE DATABASE punchchowder;  
-         \c punchchowder;
-    ```
+        ``` 
+        DROP DATABASE IF EXISTS punchchowder;  
+        CREATE DATABASE punchchowder;  
+        \c punchchowder;
+        ```
 
     - Then seed the new database from the `backend/database` folder:  
-    ```
-       cd ../backend/database  
-       psql -f seed.sql
-    ```
+        ```
+        cd ../backend/database  
+        psql -f seed.sql
+        ```
 
 > [Make sure PostgreSQL is running!](https://www.google.com/search?q=make+sure+postgres+is+running&oq=make+sure+postf&aqs=chrome.1.69i57j0l5.5280j1j7&client=ubuntu&sourceid=chrome&ie=UTF-8)
 
 5. To launch the Node/Express server, inside the `backend` folder run:
-```
-       cd ..
-       npm start
-```
+    ```
+    cd ..
+    npm start
+    ```
 
 6. Before you can launch the React App, you must target your local server within the three components that use this connection for axios calls. In the `frontend` => `src` => `components` folder, open the `SeasonOne.jsx` file within the `SeasonOne` folder.
 
     - On line 14, change  
-    ```
-         `https://calm-waters-58474.herokuapp.com/api/episodes/season/1`
-    ```
+        ```
+        `https://calm-waters-58474.herokuapp.com/api/episodes/season/1`
+        ```
 
     - to  
-    ```
-         `http://localhost:3001/api/episodes/season/1`
-    ```
+        ```
+        `http://localhost:3001/api/episodes/season/1`
+        ```
 
 7. Next, from the `components` folder, open `SeasonTwo.jsx` within the `SeasonTwo` folder.
 
     - On line 14, change  
-    ```
-         `https://calm-waters-58474.herokuapp.com/api/episodes/season/2`
-    ```
+        ```
+        `https://calm-waters-58474.herokuapp.com/api/episodes/season/2`
+        ```
 
     - to  
-    ```
-         `http://localhost:3001/api/episodes/season/2`
-    ```
+        ```
+        `http://localhost:3001/api/episodes/season/2`
+        ```
 
 8. Finally, from the `components` folder, open `Watch.jsx` within the `Watch` folder.
 
     - On line 18, change  
-    ```
-         `https://calm-waters-58474.herokuapp.com/api/episodes/${episode_id}`
-    ```
+        ```
+        `https://calm-waters-58474.herokuapp.com/api/episodes/${episode_id}`
+        ```
 
     - to  
-    ```
-         `http://localhost:3001/api/episodes/${episode_id}`
-    ```
+        ```
+        `http://localhost:3001/api/episodes/${episode_id}`
+        ```
 
 9. To launch the React App, inside the `frontend` folder, and preferably in another terminal window run:
-```
-       npm start
-```
+    ```
+    npm start
+    ```
 
 10. A new browser tab should have been opened and the App should be running. If that is not the case check the terminals output for errors, if you are unable to troubleshoot the problem, I would be happy to address issues so open [one](/issues)
 
