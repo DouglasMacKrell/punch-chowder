@@ -4,8 +4,7 @@ import "./SecretsLogin.css";
 
 const SecretsLogin = () => {
     const [input, setInput] = useState("");
-    let topSecret = useHistory()
-    let denied = useHistory()
+    let history = useHistory()
 
     const handleChange = (e) => {
         setInput(e.target.value)
@@ -14,9 +13,9 @@ const SecretsLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (input === "Bootyyyshaker9000") {
-            topSecret.push("/mad/dogs/ahoy")
+            history.push("/mad/dogs/ahoy")
         } else {
-            denied.push("/accessdenied")
+            history.push("/accessdenied")
         }
     }
 
