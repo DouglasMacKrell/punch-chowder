@@ -14,9 +14,9 @@ const ToolBar = (props) => {
           <DrawerToggleButton click={props.handleDrawerToggleClick} />
         </div>
         <div className="toolbar__logo">
-          <a href="/">
+          <NavLink to="/">
             <img src={Logo} alt="Punch Chowder" className="toolbar__logo-img" />
-          </a>
+          </NavLink>
         </div>
         <div className="spacer" />
         <div className="toolbar_nav-items">

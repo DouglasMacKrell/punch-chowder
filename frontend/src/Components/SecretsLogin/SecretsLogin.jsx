@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom"
 import "./SecretsLogin.css";
 
 const SecretsLogin = () => {
     const [input, setInput] = useState("");
+    let topSecret = useHistory()
+    let denied = useHistory()
 
     const handleChange = (e) => {
         setInput(e.target.value)
@@ -11,9 +14,9 @@ const SecretsLogin = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (input === "Bootyyyshaker9000") {
-            window.location.href = "/mad/dogs/ahoy"
+            topSecret.push("/mad/dogs/ahoy")
         } else {
-            window.location.href = "/accessdenied"
+            denied.push("/accessdenied")
         }
     }
 
