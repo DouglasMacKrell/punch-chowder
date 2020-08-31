@@ -1,0 +1,15 @@
+.bts {
+  min-height: 100vh;
+  background-image: url(./btsBG2.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bts__sub-container {
+    margin-top: 90px;
+}

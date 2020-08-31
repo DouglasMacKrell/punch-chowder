@@ -14,6 +14,11 @@ import FourZeroFour from './components/FourZeroFour/FourZeroFour';
 import SecretsLogin from './components/SecretsLogin/SecretsLogin';
 import AccessDenied from './components/AccessDenied/AccessDenied';
 import TopSecret from './components/TopSecret/TopSecret';
+import Animatics from './components/Animatics/Animatics';
+import Shorts from './components/Shorts/Shorts'
+import BehindTheScenes from './components/BehindTheScenes/BehindTheScenes';
+import BonusFeatures from './components/BonusFeatures/BonusFeatures';
+import BonusWatch from './components/BonusWatch/BonusWatch'
 
 function App() {
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
@@ -44,6 +49,11 @@ function App() {
           <Route path="/seasonone" component={SeasonOne} />
           <Route path="/seasontwo" component={SeasonTwo} />
           <Route path="/watch/:episode_id" component={Watch} />
+          <Route path="/bonus-features" component={BonusFeatures} />
+          <Route path="/animatics" component={Animatics} />
+          <Route path="/shorts" component={Shorts} />
+          <Route path="/behind-the-scenes" component={BehindTheScenes} />
+          <Route path="/bonus-watch/:bonus_id" component={BonusWatch} />
           <Route path="/secretlogin" component={SecretsLogin} />
           <Route path="/accessdenied" component={AccessDenied} />
           <Route path="/mad/dogs/ahoy" component={TopSecret} />

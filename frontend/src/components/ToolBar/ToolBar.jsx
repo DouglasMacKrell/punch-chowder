@@ -25,6 +25,9 @@ const ToolBar = (props) => {
               <NavLink to="/unleashtheflavor">UNLEASH THE FLAVOR</NavLink>
             </li>
             <li>
+              <NavLink to="/bonus-features">BONUS FEATURES</NavLink>
+            </li>
+            <li>
               <NavLink to="/secretlogin">SECRETS</NavLink>
             </li>
           </ul>

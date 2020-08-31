@@ -1,0 +1,15 @@
+.animatics {
+  min-height: 100vh;
+  background-image: url(./animaticsBG.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.animatics__sub-container {
+    margin-top: 90px;
+}
