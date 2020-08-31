@@ -6,6 +6,7 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var episodesRouter = require("./routes/episodes");
+var bonusRouter = require("./routes/bonus")
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, "../frontend/build")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/api/episodes", episodesRouter);
+app.use("/api/bonus", bonusRouter);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
