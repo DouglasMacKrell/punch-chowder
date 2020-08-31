@@ -10,6 +10,14 @@ CREATE TABLE episodes (
     season_id INT
 );
 
+DROP TABLE IF EXISTS bonus;
+CREATE TABLE bonus (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR,
+    episodeUrl VARCHAR,
+    bonus_id INT
+);
+
 -- Seed data
 
 INSERT INTO episodes (title, episodeUrl, season_id)
@@ -84,6 +92,43 @@ INSERT INTO episodes (title, episodeUrl, season_id)
     ('13A: Anatawa Hitorijanai', 'https://drive.google.com/file/d/1im7pCmVLUIKSppkJ30P_j1193TIYgGPm/preview', 2),
     ('13B: Rise', 'https://drive.google.com/file/d/1rqMX3Pt0oPdZtG5UHGkmVYd4FFBruEz0/preview', 2);
 
+INSERT INTO bonus (title, episodeUrl, bonus_id)
+    VALUES('1: Turtle Teens in: PIZZA RACE', 'https://drive.google.com/file/d/1Oh3sTnpKUCW9LqWmznYyfOObksQQN3pm/preview', 1),
+    ('2: Turtle Tots in: WEAPONS AHOY', 'https://drive.google.com/file/d/1z9WyLyn_QXdZ3Eq8p68A1EZPcj3P9N1X/preview', 1),
+    ('Rise Of The Teenage Mutant Ninja Turtles Virtual Reality Experience - Inside Nick Animation', 'https://drive.google.com/file/d/1dUX9DXLvxJn96qc8RImKB85nYfVgRO5t/preview', 2),
+    ('Making Of Rise Of The Teenage Mutant Ninja Turtles - From Sketch To Screen', 'https://drive.google.com/file/d/1Fn-TcB8R1RVruF-MTQC7EKG1ltHEciwH/preview', 2),
+    ('Rise Of The Teenage Mutant Ninja Turtles Theme Song in DIFFERENT LANGUAGES', 'https://drive.google.com/file/d/1Dw6bdsAAefICMGGn6ME3Nbh1hgsDvErA/preview', 2),
+    ('35 Years Of TMNT Drawing Challenge', 'https://drive.google.com/file/d/1Mk9FWTXtGRFEO996vYIb22cKJajsiRcP/preview', 2),
+    ('How To Draw Raph', 'https://drive.google.com/file/d/1pRHSshgGaPKU5KwjDFoYUQHJym6I2qBF/preview', 2),
+    ('How To Draw Mikey', 'https://drive.google.com/file/d/1UGWnAshubTj-_K_GukgCsl86XBuM5I0c/preview', 2),
+    ('How To Draw Leo', 'https://drive.google.com/file/d/1epbgfrfO44rGD5p3JKgyK1YPkxyrzu0I/preview', 2),
+    ('How To Draw Donnie', 'https://drive.google.com/file/d/1Lc3GmKu256ao_RvveliHwdS4Q1QK9oVK/preview', 2),
+    ('Meet The Creators Of Rise Of The Teenage Mutant Ninja Turtles', 'https://drive.google.com/file/d/12887R6okkLhumFnbhqtT5KW3YEr1mAex/preview', 2),
+    ('Rise of the TMNT Mural at Para Los Niños - Nick Community Efforts', 'https://drive.google.com/file/d/1WzN30SkBIdRzBSJPD2T1hd7LlGQlIgbl/preview', 2),
+    ('Origami Tsunami - Animatic', 'https://drive.google.com/file/d/1PsryYr-C4mAGUxh68OULLIQyTfLmHsbL/preview', 3),
+    ('Repo Mantis - Animatic', 'https://drive.google.com/file/d/1BQejS6vePKSLLxay0J1BdDc7Fyo6PQEP/preview', 3),
+    ('The Fast And The Furriest - Animatic','https://drive.google.com/file/d/1ZmrfcX9gn5AbzFEoK4AmwypxoMFq9rEo/preview', 3),
+    ('Shell In A Cell - Animatic', 'https://drive.google.com/file/d/1jEwPFucNRrTtM_7-hM7JuvkMFSjIuxGC/preview', 3),
+    ('Bug Busters Part 1 - Animatic', 'https://drive.google.com/file/d/1zhyHqrvb1beO44GkP84jEqMZCZ4MmXNb/preview', 3),
+    ('Bug Busters Part 2 - Animatic', 'https://drive.google.com/file/d/1pOEChNzEstYj0SBaOd5buIXtebKXiNry/preview', 3),
+    ('The Longest Fight - Animatic', 'https://drive.google.com/file/d/1J7FEidK3pX_5q52v4Z4aTdCoNUhlEXKU/preview', 3),
+    ('The Gumbus - Animatic', 'https://drive.google.com/file/d/1HcsCn5ILiA3Ka5wbXqE6VjmG5bMaXMyL/preview', 3),
+    ('The Purple Jacket - Animatic', 'https://drive.google.com/file/d/1wee8mkip65QyIL32gs7-aPiDxfV0i6Yh/preview', 3),
+    ('Pizza Pit - Animatic', 'https://drive.google.com/file/d/1Ebqw96-3M3nwrKLHKOiVKL3BxTxUoUsN/preview', 3),
+    ('Shadow Of Evil - Animatic', 'https://drive.google.com/file/d/1eoTU7YxtpM-q25mBW1CJ5SnAhkGN9jVK/preview', 3),
+    ('Warren & Hypno, Sitting In A Tree - Animatic', 'https://drive.google.com/file/d/1RVeecCSduv2LlJTVxPmSLBOJ_LgAmNgz/preview', 3),
+    ('Sparring Partner - Animatic', 'https://drive.google.com/file/d/1DHucvR1dlo9VMxH7f3sycMOxzUaf9H1B/preview', 3),
+    ('You Got Served - Animatic', 'https://drive.google.com/file/d/1_cjyqewpn4Q35aacwRd3KHAL262eYQe5/preview', 3),
+    ('Mystic Library - Animatic', 'https://drive.google.com/file/d/1ML2eX8yy2FTTDhhbEsWmwrez3O1EN-O8/preview', 3),
+    ('The Purple Game - Animatic', 'https://drive.google.com/file/d/1Q7qoX9uRJI7VxtKN5t0posnIEuSzwTkf/preview', 3),
+    ('Many Unhappy Returns - Animatic', 'https://drive.google.com/file/d/1AC-NRqcD1ZKlyTSEMK2HdbogNAzs0W0w/preview', 3),
+    ('Breaking Purple - Animatic', 'https://drive.google.com/file/d/1jmuRzTuALh_9d81dwgkbpSiSTbCsczO-/preview', 3),
+    ('Reparin'' The Baron - Animatic', 'https://drive.google.com/file/d/1AfpMC04oW7ZyH_ve_QOMOzun52pW2C2s/preview', 3),
+    ('Air Turtle - Animatic', 'https://drive.google.com/file/d/1vgv4HnX0ISofzyrQtcwbkcnYUyOQ9O8v/preview', 3),
+    ('Pizza Puffs - Animatic', 'https://drive.google.com/file/d/1XN1QJp-yqPqvd-nJc7kYPreGESP4q4eU/preview', 3),
+    ('Rise - Animatic', 'https://drive.google.com/file/d/1KvPO0CW-xphvyNCa3vFqhEBup8S-rV7o/preview', 3);
+
     -- Tests
 
     SELECT * FROM episodes;
+    SELECT * FROM bonus;
