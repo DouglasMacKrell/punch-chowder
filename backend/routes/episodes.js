@@ -36,6 +36,7 @@ router.get("/season/:season_id", async (req, res, next) => {
   } catch (err) {
     res.json({
       status: "failure",
+      error: error,
       message: "Oops! All Errors!",
       payload: null,
     });
