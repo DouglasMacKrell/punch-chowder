@@ -7,7 +7,7 @@ const TopSecret = () => {
       <div className="top-secret__main-container">
         <div className="top-secret__sub-container">
           <div className="top-secret__doug">
-              <h2>SITE CREATED BY</h2>
+            <h2>SITE CREATED BY</h2>
             <a href="https://douglasmackrell.com">
               <button>PORTFOLIO</button>
             </a>
@@ -16,9 +16,13 @@ const TopSecret = () => {
             </a>
           </div>
           <div className="top-secret__video-owner">
-              <h2>VIDEO CLIPS HOSTED BY</h2>
-              <a href="https://twitter.com/tmntlovingleo"><button>TWITTER</button></a>
-              <a href="https://tmntlovingleocreates.tumblr.com/"><button>TUMBLR</button></a>
+            <h2>VIDEO CLIPS HOSTED BY</h2>
+            <a href="https://twitter.com/OneThumpAway">
+              <button>TWITTER</button>
+            </a>
+            <a href="https://tmntlovingleocreates.tumblr.com/">
+              <button>TUMBLR</button>
+            </a>
           </div>
         </div>
       </div>
