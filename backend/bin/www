@@ -9,6 +9,8 @@ var debug = require("debug")("backend:server");
 var http = require("http");
 var enforce = require("express-sslify");
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 /**
