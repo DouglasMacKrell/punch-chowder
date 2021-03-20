@@ -3,6 +3,8 @@ import EpisodeButton from "./EpisodeButton";
 
 const LinksContainer = ({ episodes }) => {
   let buttons = [];
+  console.log(episodes.length);
+  console.log(episodes);
   if (episodes.length > 0) {
     for (let episode of episodes) {
       buttons.push(<EpisodeButton episode={episode} key={episode.id} />);

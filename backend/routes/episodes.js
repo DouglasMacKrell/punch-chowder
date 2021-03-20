@@ -15,6 +15,7 @@ router.get("/:episode_id", async (req, res, next) => {
     res.json({
       status: "failure",
       message: "Oops! All Errors!!",
+      error: error,
       payload: null,
     });
     throw error;
